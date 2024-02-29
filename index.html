@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=" main.css">
+</head>
+
+<body>
+
+
+    <!-- merge header, footer, slider html pages -->
+    <div class="container-fluid">
+        <div id="Header"></div>
+        <div class="m-0">
+            <!-- fashion mistakes banner -->
+
+            <img src="photo/Banner.jpg" alt="" width="100%" height="800px">
+            <!-- <img src="photo/1528.jpg" width="100%" height="700px"> -->
+            <div class="logoweb">Love clothes…Love Style</div>
+
+        </div>
+
+        <div id="Slider"></div>
+
+        <div id="Footer"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+
+
+    <script>
+        $(function () {
+            $("#Header").load('Header.html');
+            $("#Slider").load('Slider.html ');
+            $("#Footer").load('Footer.html');
+        })
+    </script>
+    <script>
+        $(".navbar-collapse a").click(function () {
+          $(".navbar-collapse").collapse("hide");
+        });
+    </script>
+
+</body>
+
+</html>

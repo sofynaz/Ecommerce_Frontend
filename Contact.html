@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="Header"></div>
+        <br>
+    </div>
+    <a href="Header.html"></a>
+    <div class="container" style="position: relative; margin-bottom: 20px;">
+        <div class="row">
+            <!-- Image for cart -->
+            <div class="col-sm-7 mt-5 mb-5 px-5 ">
+                <img class="img-fluid rounded-3 " src="photo/p-2.jpg" alt="Image">
+            </div>
+            <!-- Contact us Name -->
+            <div class="col-sm-5">
+                <h2 class="contactus">Contact Us</h2>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="form-control text-shadow" id="exampleFormControlInput1 "
+                        placeholder="Enter your Name">
+                        
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                        <input type="email" class="form-control text-shadow" id="exampleFormControlInput1"
+                            placeholder="Enter Your E-mail">
+                    </div>
+                </div>
+                <!-- Messages textarea -->
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <i class="fa-solid fa-message"></i>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <!-- Submit button -->
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $("#Header").load('Header.html');
+            $("#Footer").load('Footer.html');
+        })
+    </script>
+
+    <!-- Bootstrap script src -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<style>
+  #dropdownli {
+    background-color: rgb(21, 21, 21);
+  }
+
+  .Brandname {
+    font-family: 'Alkatra', cursive;
+    color: rgb(249, 143, 161);
+    text-shadow: 2px 1px 2px palevioletred;
+    font-size: 34px;
+    margin-left: 22px;
+
+  }
+
+  .Brandname:hover {
+    color: rgb(247, 77, 77);
+    transform: scale(1.2);
+  }
+
+  #searchbtn {
+    margin-left: 25%;
+  }
+</style>
+
+<body>
+  <!-- First Header Part -->
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-light navbar-expand-lg bg-body-tertiary">
+        <div class="col-lg-2">
+          <a href="index.html" style="text-decoration: none;">
+            <h2 class="mt-2 mb-3 Brandname">New Style</h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="col-sm-6  ">
+            <form class="d-flex mt-3 mb-3 " id="searchbtn" role="search">
+              <input class="form-control   rounded-end-pill rounded-bottom-pill text-center me-2 border-danger"
+                type="search" placeholder="Search the products etc..." aria-label="Search">
+              <button class="btn btn-outline-danger fw-bold m-0  bg-danger" type="submit"> <i
+                  class="fa-solid fa-magnifying-glass fa-shake fa-xl text-light jus"></i></button>
+            </form>
+          </div>
+          <div class="col-sm-4 mb-4 d-flex justify-content-end header-buttons">
+            <a class="btn fw-bold" id="Loginbtn" href="Login.html" role="Button">Login</a>
+            <a href="Cart.html" class="cart"><i class="fa-solid fa-cart-shopping ms-5 fa-2xl "
+                style="color: #f783a8;"></i></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <!-- ===============2nd part of header  -->
+  <div class="row bg-dark">
+    <div class="col-12">
+      <ul class="nav justify-content-center">
+        
+        <li class="nav-item">
+          <!-- Home Link-->
+          <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <!-- All products link  -->
+          <a class="nav-link text-light" href="Allproduct.html">All Products</a>
+        </li>
+        <!-- women dropdown list -->
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Women
+          </a>
+          <ul class="dropdown-menu" id="dropdownli">
+            <li><a class="dropdown-item text-danger" href="wo-All.html">All products</a></li>
+            <li><a class="dropdown-item text-danger" href="Wo-Dress.html">Dresses</a></li>
+            <li><a class="dropdown-item text-danger" href="Wo-Pants.html">Pants</a></li>
+            <li><a class="dropdown-item text-danger" href="Wo-Skirts.html">Skirts</a></li>
+          </ul>
+        </li>
+        <!-- Men dropdown list -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Men
+          </a>
+          <ul class="dropdown-menu " id="dropdownli">
+            <li><a class="dropdown-item text-danger" href="me-All.html">All Products</a></li>
+            <li><a class="dropdown-item text-danger" href="Me-Shirts.html">Shirts</a></li>
+            <li><a class="dropdown-item text-danger" href="Me-Pants.html">Pants</a></li>
+            <li><a class="dropdown-item text-danger" href="Me-Hoody.html">Hoodies</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <!-- kids link  -->
+          <a class="nav-link text-light" href="Kids.html">Kids</a>
+        </li>
+        <li class="nav-item">
+          <!-- contact link  -->
+          <a class="nav-link text-light" href="Contact.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+      <!-- Bootstrap script -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+<link rel="stylesheet" href="main.css">
+  <!-- bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div id="Header"></div>
+    <br>
+    </div>  
+  <!-- ===two column==1/2 -->
+  <div class="container-fluid">
+    <div class="row m-5 ">
+      <!-- ===col ist row col-8 -->
+      <div class="col-lg-8 col-md-7 col-sm-12 border border-secondary-subtle">
+        <div>
+          <h3 class=" text-center pt-2">Items in cart</h3>
+        </div>
+        <hr>
+        <!-- ===divide three gride in ist col -->
+        <div class="row sub-category p-3 m-3">
+          <!-- ===ist part have images of cart=== -->
+          <div class="col-lg-4 ">
+            <img src="https://img.freepik.com/free-photo/young-woman-beautiful-yellow-dress_1303-17534.jpg?size=626&ext=jpg&ga=GA1.2.463143725.1692859751&semt=ais" 
+            height="150px" width="150px" alt="">
+          </div>
+          <!-- ===2nd one products name and price also icon -->
+          <div class="col-lg-3 ">
+            <h5> Roadster's Kurta</h5>
+            <div class="cart-product-details pt-2">
+              <p class="fs-6">Women's Kurta</p>
+              <h6 class="fw-medium">Size:
+                <span class="text-danger">L</span>
+              </h6>
+              <h5 class="fw-bold text-danger">
+                ₹ 699
+                <i class="fa-sharp fa-solid fa-trash ms-5" style="color: #f0ca0f;"></i>
+               
+              </h5>
+            </div>
+          </div>
+          <!-- ===3rd users + and - increase and decease -->
+          <div class="col-lg-5 cart-quantity-form ">
+            <form class=" d-flex align-item-center">
+              <button ><i class="fa-sharp fa-regular fa-square-minus" style="color: #f50c9c;"></i></button>
+              <input type="number">
+              <button><i class="fa-sharp fa-regular fa-square-plus" style="color: #f50c9c;"></i></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- ===row have two column==1/2 -->
+      <div class="col-lg-4 col-md-5 col-sm-12  border border-secondary-subtle card-product-summary">
+        <div>
+          <h4 class="text-center pt-2">Summary
+            <hr>
+          </h4>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h6>
+              Total price
+              <span class="float-end ">₹ 499.00</span>
+            </h6>
+            <h6>
+              Shipping
+              <span class="float-end ">₹ 299.00</span>
+            </h6>
+            <hr>
+            <h4>
+              Total
+              <span class="float-end ">₹ 798.00</span>
+            </h4>
+          </div>
+          <div class="card-footer text-center"></div>
+          <button class="btn btn-primary">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div id="Footer"></div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <!-- Bootstrap script -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> 
+<script>
+    $(function () {
+        $("#Header").load('Header.html');
+    
+        $("#Footer").load('Footer.html');
+    })
+</script> 
+
+</body>
+
+</html>
